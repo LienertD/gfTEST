@@ -1,5 +1,8 @@
 {
   "name": "geofeelings",
+  "engines": {
+    "node": "4.2.4"
+  },
   "version": "1.0.0",
   "description": "geofeelings project",
   "main": "app.js",
@@ -38,5 +41,8 @@
     "webpack-stream": "latest",
     "multer": "latest",
     "socket.io": "latest"
+  },
+  "devDependencies": {
+    "gulp-resolve-dependencies": "^2.2.0"
   }
 }
