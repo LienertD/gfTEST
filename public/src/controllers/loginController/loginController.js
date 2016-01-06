@@ -5,7 +5,7 @@
 (function () {
     "use strict";
 
-    var socket = io.connect("http://localhost:3001");
+    var socket = io.connect(window.location.host+":3001");
 
     var loginController = function ($scope, $http, $location, shareVarsBetweenCtrl, shareService, profileService) {
         if (shareVarsBetweenCtrl.getExtraLoginInfo()) {
@@ -41,7 +41,7 @@
 
         //Moet nog naar een service omgezet worden
         $scope.login = function () {
-            $http.post('http://localhost:3000/auth/login', {
+            $http.post(window.location.host+':3000/auth/login', {
                 username: $scope.username,
                 password: $scope.password
             }).success(function (data) {
@@ -72,7 +72,7 @@
 
         //Moet nog naar een service omgezet worden
         $scope.register = function () {
-            $http.post('http://localhost:3000/auth/register', {
+            $http.post(window.location.host+':3000/auth/register', {
                 username: $scope.username,
                 password: $scope.password,
                 email: $scope.email
