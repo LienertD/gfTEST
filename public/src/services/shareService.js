@@ -26,7 +26,7 @@ var shareService = function ($http, $q, $location, googleMapsService, eventServi
 
     var postShare = function (data) {
         $http({
-            url: 'http://localhost:3000/api/share',
+            url: window.location.host+':3000/api/share',
             method: 'POST',
             data: data
         }).success(function (serverData) {

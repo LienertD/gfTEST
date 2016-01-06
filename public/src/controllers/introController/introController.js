@@ -7,7 +7,7 @@
 
     var introController = function ($scope, shareService, $http, $location, profileService, shareVarsBetweenCtrl, googleMapsService) {
 
-        var socket = io.connect("http://localhost:3001");
+        var socket = io.connect(window.location.hostname+":3001");
 
         //SMILEY TEKENEN
         $scope.sliderValue = 50;

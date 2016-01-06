@@ -14,6 +14,7 @@
                 if(user.redirect) {
                     $location.path(user.redirect);
                 } else {
+                    console.log("testlog"); 
                     $scope.newEvent.authorid = user.id;
                 }
             } else {

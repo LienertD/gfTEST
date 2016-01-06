@@ -23,7 +23,7 @@
 
 
         var searchUserFromId = function (searchString) {
-            var url = 'http://localhost:3000/api/user/' + searchString;
+            var url = window.location.host+':3000/api/user/' + searchString;
             return $http.get(url).then(function (response) {
                 return new GfUser(
                     response.data._id,

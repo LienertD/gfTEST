@@ -41,7 +41,7 @@
 
         //Moet nog naar een service omgezet worden
         $scope.login = function () {
-            $http.post(window.location.host+':3000/auth/login', {
+            $http.post(window.location.hostname+':3000/auth/login', {
                 username: $scope.username,
                 password: $scope.password
             }).success(function (data) {
@@ -72,7 +72,7 @@
 
         //Moet nog naar een service omgezet worden
         $scope.register = function () {
-            $http.post(window.location.host+':3000/auth/register', {
+            $http.post(window.location.hostname+':3000/auth/register', {
                 username: $scope.username,
                 password: $scope.password,
                 email: $scope.email

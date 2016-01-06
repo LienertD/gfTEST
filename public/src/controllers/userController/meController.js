@@ -5,7 +5,7 @@
 (function () {
     "use strict";
 
-    var socket = io.connect("http://localhost:3001");
+    var socket = io.connect(window.location.host+":3001");
 
     var meController = function ($scope, $http, $location, $sce, profileService, shareService) {
         profileService.getUser(function (err, user) {

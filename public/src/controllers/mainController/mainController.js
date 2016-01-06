@@ -8,7 +8,7 @@
     var mainController = function ($scope, googleMapsService, shareService, profileService, $location, $routeParams) {
 
 
-        var socket = io.connect("http://localhost:3001");
+        var socket = io.connect(window.location.host+":3001");
         $scope.chatMessages = []; 
 
 
