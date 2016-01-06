@@ -1,4 +1,4 @@
-var socket = io.connect("http://localhost:667");
+var socket = io.connect(window.location.host+":667");
 
 socket.on("usermessage", function (data) { //ontvangen bericht
     newTextBubble(data.sender, data.text);
