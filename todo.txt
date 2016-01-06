@@ -1,0 +1,9 @@
+TODO BACKEND JONATAN
+
+> Image in mongoDB
+> realtime map indien nog tijd
+
+TODO FRONTEND JONATAN
+
+> CSS
+> Id's naar namen
